@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                amazon
+            </div>
+
+            <div class="search-container">
+                <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="nav-links">
+                <div>
+                    <span>Hello, Sign In</span>
+                    <h4>Account</h4>
+                </div>
+
+                <div>
+                    <span>Returns</span>
+                    <h4>& Orders</h4>
+                </div>
+
+                <div class="cart-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span id="cartCount">0</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="category-bar">
+
+        <button onclick="filterCategory('All')">
+            All
+        </button>
+
+        <button onclick="filterCategory('Electronics')">
+            Electronics
+        </button>
+
+        <button onclick="filterCategory('Gaming')">
+            Gaming
+        </button>
+
+        <button onclick="filterCategory('Fashion')">
+            Fashion
+        </button>
+
+        <button onclick="filterCategory('Home')">
+            Home
+        </button>
+
+    </section>
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Summer Mega Sale</h1>
+
+            <p>
+                Up To 70% Off On Electronics,
+                Fashion & More
+            </p>
+
+            <button>
+                Shop Now
+            </button>
+        </div>
+
+    </section>
+
+    <section class="deal-section">
+
+        <h2>Today's Deals</h2>
+
+        <div class="deals">
+
+            <div class="deal-box">
+                <h3>Mobile Deals</h3>
+                <p>Up To 50% Off</p>
+            </div>
+
+            <div class="deal-box">
+                <h3>Laptop Deals</h3>
+                <p>Up To 35% Off</p>
+            </div>
+
+            <div class="deal-box">
+                <h3>Gaming Deals</h3>
+                <p>Up To 60% Off</p>
+            </div>
+
+            <div class="deal-box">
+                <h3>Fashion Deals</h3>
+                <p>Up To 70% Off</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="product-section">
+
+        <h2>Featured Products</h2>
+
+        <div
+        class="products"
+        id="productContainer">
+
+        </div>
+
+    </section>
+
+    <section class="wishlist-section">
+
+        <h2>
+            Wishlist ❤️
+        </h2>
+
+        <div
+        id="wishlistContainer">
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-top">
+            Back To Top
+        </div>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Get To Know Us</h3>
+
+                <p>About</p>
+                <p>Careers</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <h3>Connect</h3>
+
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+
+                <p>Support</p>
+                <p>Contact</p>
+                <p>FAQ</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            Amazon 2026
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
